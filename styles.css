@@ -4,66 +4,73 @@
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
   }
-body {
-height: 100vh;
-}
+
+.header {
+  padding: 0 256px;
+  background-color: #1F2937;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}    
+  .header-logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: #F9FAF8;
+}  
+
 a {
     text-decoration: none;
-  }
-.center {
-   
-   
-    
-  
-    
-       
-}
-.header {
-    padding: 0 256px;
-    background-color: #1F2937;
-    justify-content: space-between;
-    display: flex;
-    gap: 16px;
+      }
+
+.nav-links {
+        list-style-type: none;
+        display: flex;
+        gap: 16px;
+ }
     
 
-    
-}
 .hero {
     background-color: #1F2937;
     display: flex;
     align-items: center;
-    padding: 0 256px;
+    padding: 168px 256px;
 
-    
+.hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px 
+} 
 
-}
-.header-logo{
-    font-size: 24px;
-    font-weight: bold;
-    color: #F9FAF8;
-    
 }
 h1 {
     font-size: 48px;
     font-weight: 900;
-    margin: 0;
     color: #f9faf8;
 
 }
 ul {
-    margin: 0;
-    padding: 0;
-    gap: 16px;
+    color: #E5E7EB;
+}
+.nav-links {
     list-style-type: none;
     display: flex;
-    gap:16px;
-    color: #E5E7EB;
-    
-}
-li {
-    
-}
+    gap: 16px;
+  }
 
+  .button {
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 8px 32px;
+    font-size: 18px;
+  }
+  
+  .hero-button.button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    align-self: flex-start;
+  }
 .secondary-text {
     color: #E5E7EB;
     
@@ -85,6 +92,7 @@ li {
     height: 400px;
     width: 400px;
     align-items: center;
+    flex: 1;
 }
 
 .container {
@@ -92,27 +100,35 @@ li {
     padding: 0 256px;
 }
 
-.cards {
-    display: inline-block;
-    text-align: center;
-    margin: auto;
-    justify-content: space-around;
 
-}
 
 .puffs {
-    display: flex;
-    justify-items: center;
-    padding: 0 256px;
+    padding-top: 64px;
+    padding-bottom: 128px;
     
 }
+
+
+.cards {
+        display: inline-block;
+        text-align: center;
+        margin: auto;
+        justify-content: space-around;
+    
+    }
+    .info-card-text {
+        font-size: 18px;
+        color: grey;
+        text-align: center;
+      }
+      
 
 .placeholder {
     display: flex;
     align-items: center;
     outline-style: solid ;
-    width: 60px;
-    height: 60px;
+    width: 64px;
+    height: 64px;
     outline-color:#3882F6 ;
     border-radius: 10px 10px 10px 10px;
 }
@@ -127,7 +143,9 @@ li {
 
 .footer {
     background-color: #1F2937;
+    color: #E5E7EB;
     display: flex;
     justify-content: center;
-   
+    align-items: center;
+    padding: 48px;   
 }
