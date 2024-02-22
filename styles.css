@@ -14,13 +14,13 @@
     height: 60px;
     }    
 
-.header-logo{
+.header-logo {
     font-size: 24px;
     font-weight: bold;
     color: #F9FAF8;
     }  
 
-a   { 
+a  { 
     text-decoration: none;
     }
 
@@ -61,7 +61,7 @@ ul {
     }
 
 .button {
-    border-radius: 10px;
+    border-radius: 15px;
     font-weight: bold;
     padding: 8px 32px;
     font-size: 18px;
@@ -86,10 +86,6 @@ ul {
     flex: 1;
     }
 
-.puffs {
-    padding-top: 64px;
-    padding-bottom: 128px;
-    }
 .subheader {
     font-size: 36px;
     font-weight: 900;
@@ -98,6 +94,11 @@ ul {
     margin-bottom: 64px;
     }
 
+.puffs {
+        padding: 64px 0 128px 100px;
+        display: flex;
+        }
+
 .cards {
     display: flex;
     align-items: center;
@@ -105,22 +106,24 @@ ul {
     
     }
 
+.placeholder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        outline-style: solid;
+        width: 64px;
+        height: 64px;
+        outline-color:#3882F6 ;
+        border-radius: 10px 10px 10px 10px;
+        
+        }
+
 .info-card-text {
     font-size: 18px;
     color: grey;
     text-align: center;
+    word-break: break-word;
     }   
-
-.placeholder {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    outline-style: solid;
-    width: 64px;
-    height: 64px;
-    outline-color:#3882F6 ;
-    border-radius: 10px 10px 10px 10px;
-    }
 
 .testimonial {
         padding: 128px 472px 64px;
@@ -143,12 +146,46 @@ ul {
         font-weight: bold;
         text-align: right;
         }   
+
+.modal {
+    padding: 128px 256px; 
+  color: #E5E7EB;
+}
         
 .container {
-    background-color: #3882F6;
-    padding: 0 256px;
+  padding: 64px 192px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 64px;
+  background-color:  #3882F6;
+  border-radius: 8px;
     }
 
+.cta-text-content {
+        flex: auto;
+      }
+
+.cta-button {
+        flex: none;
+        background-color: transparent;
+        border: 2px solid #F9FAF8;
+        color: #F9FAF8;
+        
+      }
+
+.singup {
+        font-size: 20px;
+        font-weight: bold;
+        color: #F9FAF8;
+        margin-bottom: 8px;
+      }
+
+.text {
+    color: #E5E7EB;
+    padding-bottom: 15px;
+    
+}
 
 .footer {
     background-color: #1F2937;
