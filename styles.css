@@ -100,8 +100,9 @@ ul {
 
 .cards {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
+    
     }
 
 .info-card-text {
