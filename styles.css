@@ -97,12 +97,15 @@ ul {
 .puffs {
         padding: 64px 0 128px 100px;
         display: flex;
+        align-items: center;
+        justify-content: center;
         }
 
 .cards {
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
     word-break: break-all;
     }
 
